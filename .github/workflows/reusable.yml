@@ -1,0 +1,15 @@
+on: 
+  workflow_call:
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "first step"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 1
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "am step three"
